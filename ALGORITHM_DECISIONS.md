@@ -522,4 +522,10 @@ But STRUX_V1 does not prove that yet.
 
 STRUX_V1 only provides the first operational base needed to test that claim.
 
+Future benchmark direction:
+adversarial geometry tests focused on:
+- false bridge resistance
+- near-parallel corridors
+- parameter-stable separation fidelity
+
 ````
