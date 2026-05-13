@@ -1,0 +1,36 @@
+project: STRUX_V1
+status: experimental_structured_framework
+
+canonical_benchmarks:
+  - name: STRUX_SINGLE_TRAPPED_TEST_05
+    file: benchmarks/transport_diagnosis_test_05.py
+    command: python -m benchmarks.transport_diagnosis_test_05
+    expected:
+      A_REFERENCE_OPEN: SINGLE COHERENT CHANNEL
+      H_BRAIDED: MULTI-CHANNEL / BRAIDED
+      I_SINGLE_TRAPPED: TRAPPED / INCOMPLETE
+
+validated_modules:
+  - path: core/transport/transport_diagnosis_v1.py
+    status: synthetic_validated
+    public_api:
+      - count_gate_modes
+      - classify_transport
+      - diagnose_transport
+
+failed_observables:
+  - persistence
+  - endpoint_compactness
+  - endpoint_entropy
+  - gate_entropy
+
+do_not_claim:
+  - universal physics
+  - cosmology proof
+  - complete TDA replacement
+  - physical flux model
+
+development_rule:
+  - read AI_README.md first
+  - read FAILED_OBSERVABLES.md before proposing new metrics
+  - run canonical benchmarks before modifying core modules
