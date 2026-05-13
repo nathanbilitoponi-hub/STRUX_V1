@@ -1,0 +1,64 @@
+STRUX_APERTURE_TEST_01
+
+Purpose: estimate minimum viable transport aperture.
+
+aperture_height = 2
+  success_rate        : 0.1340
+  direction_coherence : 0.1772
+  detected_modes      : 1
+  transport_class     : SINGLE COHERENT CHANNEL
+
+aperture_height = 4
+  success_rate        : 0.2840
+  direction_coherence : 0.2724
+  detected_modes      : 1
+  transport_class     : SINGLE COHERENT CHANNEL
+
+aperture_height = 6
+  success_rate        : 0.4520
+  direction_coherence : 0.3945
+  detected_modes      : 1
+  transport_class     : SINGLE COHERENT CHANNEL
+
+aperture_height = 8
+  success_rate        : 0.5960
+  direction_coherence : 0.5095
+  detected_modes      : 1
+  transport_class     : SINGLE COHERENT CHANNEL
+
+aperture_height = 12
+  success_rate        : 0.7960
+  direction_coherence : 0.6929
+  detected_modes      : 1
+  transport_class     : SINGLE COHERENT CHANNEL
+
+aperture_height = 16
+  success_rate        : 0.9320
+  direction_coherence : 0.8645
+  detected_modes      : 1
+  transport_class     : SINGLE COHERENT CHANNEL
+
+aperture_height = 22
+  success_rate        : 0.9940
+  direction_coherence : 0.9510
+  detected_modes      : 1
+  transport_class     : SINGLE COHERENT CHANNEL
+
+aperture_height = 30
+  success_rate        : 1.0000
+  direction_coherence : 0.9748
+  detected_modes      : 1
+  transport_class     : SINGLE COHERENT CHANNEL
+
+aperture_height = 44
+  success_rate        : 1.0000
+  direction_coherence : 0.9785
+  detected_modes      : 1
+  transport_class     : SINGLE COHERENT CHANNEL
+
+aperture_height = 60
+  success_rate        : 0.9980
+  direction_coherence : 0.9791
+  detected_modes      : 1
+  transport_class     : SINGLE COHERENT CHANNEL
+
