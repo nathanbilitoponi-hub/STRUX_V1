@@ -1,0 +1,28 @@
+STRUX_CORRIDOR_COHERENCE_TEST_01
+
+Purpose: constant-width corridor, variable global geometry.
+
+A_STRAIGHT
+  success_rate        : 1.0000
+  direction_coherence : 0.9954
+  detected_modes      : 1
+  transport_class     : SINGLE COHERENT CHANNEL
+
+B_MILD_CURVE
+  success_rate        : 1.0000
+  direction_coherence : 0.9351
+  detected_modes      : 1
+  transport_class     : SINGLE COHERENT CHANNEL
+
+C_STRONG_CURVE
+  success_rate        : 1.0000
+  direction_coherence : 0.8057
+  detected_modes      : 1
+  transport_class     : SINGLE COHERENT CHANNEL
+
+D_ZIGZAG
+  success_rate        : 0.4980
+  direction_coherence : 0.5625
+  detected_modes      : 1
+  transport_class     : SINGLE COHERENT CHANNEL
+

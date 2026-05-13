@@ -93,6 +93,62 @@ Limitations:
 
 ---
 
+# 3. direction_coherence
+
+STATUS:
+VALIDATED ON SYNTHETIC CORRIDOR BENCHMARK
+
+Definition:
+Mean alignment of ray direction with the target direction during transport.
+
+Operational meaning:
+direction_coherence measures corridor alignment / tortuosity sensitivity.
+It is NOT a topology metric.
+
+Validated in:
+- STRUX_CORRIDOR_COHERENCE_TEST_01
+
+Key result from constant-width corridor test:
+
+A_STRAIGHT:
+success_rate = 1.0000
+direction_coherence = 0.9954
+detected_modes = 1
+
+B_MILD_CURVE:
+success_rate = 1.0000
+direction_coherence = 0.9351
+detected_modes = 1
+
+C_STRONG_CURVE:
+success_rate = 1.0000
+direction_coherence = 0.8057
+detected_modes = 1
+
+D_ZIGZAG:
+success_rate = 0.4980
+direction_coherence = 0.5625
+detected_modes = 1
+
+Interpretation:
+With corridor width held approximately constant,
+direction_coherence decreases as global corridor geometry becomes more curved or tortuous.
+
+This suggests STRUX is sensitive to corridor coherence,
+not only aperture width or binary path existence.
+
+Important distinction:
+- gate_mode_count measures number of transport channels.
+- success_rate measures transport viability.
+- direction_coherence measures geometric alignment / tortuosity.
+
+Limitations:
+- synthetic only
+- depends on ray dynamics
+- depends on noise level
+- not yet validated on real-world spatial networks
+---
+
 # CURRENT CLAIM
 
 STRUX currently supports this limited claim:
