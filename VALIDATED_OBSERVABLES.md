@@ -147,6 +147,19 @@ Limitations:
 - depends on ray dynamics
 - depends on noise level
 - not yet validated on real-world spatial networks
+
+Additional caution:
+
+direction_coherence is currently validated only as an empirical synthetic diagnostic.
+
+It is NOT yet proven:
+- invariant under rotation,
+- invariant under scaling,
+- invariant under sampling changes,
+- independent from ray initialization,
+- distinct from standard pathfinding alignment behavior.
+
+Further validation is required before interpreting it as a general geometric observable.
 ---
 
 # CURRENT CLAIM

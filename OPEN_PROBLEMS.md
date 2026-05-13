@@ -298,3 +298,26 @@ Do NOT silently assume:
 
 \- classification implies theory.
 
+---
+
+# BASELINE COMPARISON NOT YET PERFORMED
+
+STATUS:
+OPEN CRITICAL VALIDATION
+
+Current STRUX transport benchmarks have not yet been compared against:
+
+- A* shortest-path
+- RRT (Rapidly-exploring Random Trees)
+- diffusion/random-walk baselines
+
+Current results validate behavior of the constrained ray propagation model,
+but do NOT yet demonstrate superiority or uniqueness relative to standard pathfinding methods.
+
+Critical next step:
+compare STRUX observables against baseline transport/pathfinding systems
+on identical synthetic geometries.
+
+Main risk:
+current observables may partially reflect generic geometric traversal difficulty
+rather than STRUX-specific transport structure.
