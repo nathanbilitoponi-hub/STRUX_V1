@@ -1,5 +1,34 @@
 \# STRUX\_V1 — AI README
 
+## Current Working Definition
+
+STRUX_V1 is an experimental geometric stress-response framework.
+
+Instead of describing geometry only through static topology or shortest paths,
+STRUX probes constrained geometries using ensembles of oriented trajectories
+and measures how geometry affects:
+
+- completion viability
+- directional coherence
+- local mode structure
+- clearance viability
+
+Current observables:
+- success_rate
+- direction_coherence
+- gate_mode_count
+- clearance_ratio
+
+STRUX_V1 does NOT currently claim:
+- universal transport laws
+- cosmology
+- physical flux modeling
+- superiority over A*, RRT, diffusion, or porous-media models
+
+Current goal:
+identify whether constrained geometries with identical connectivity
+can still produce measurably different transport responses.
+
 
 
 IMPORTANT:
