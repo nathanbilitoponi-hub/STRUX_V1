@@ -1,0 +1,13 @@
+STRUX_CLEARANCE_TEST_01
+
+Transport viability based on body size vs aperture clearance.
+
+aperture=4 ratio=0.27 BLOCKED
+aperture=6 ratio=0.40 BLOCKED
+aperture=8 ratio=0.53 BLOCKED
+aperture=10 ratio=0.67 BLOCKED
+aperture=12 ratio=0.80 BLOCKED
+aperture=14 ratio=0.93 BLOCKED
+aperture=16 ratio=1.07 PASS
+aperture=20 ratio=1.33 PASS
+aperture=26 ratio=1.73 PASS

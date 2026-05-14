@@ -162,6 +162,44 @@ It is NOT yet proven:
 Further validation is required before interpreting it as a general geometric observable.
 ---
 
+# 4. clearance_ratio
+
+STATUS:
+VALIDATED ON SYNTHETIC GEOMETRIC BENCHMARK
+
+Definition:
+clearance_ratio = aperture_size / body_size
+
+Operational meaning:
+clearance_ratio measures whether a body of given size can pass through a geometric opening.
+
+Validated in:
+- STRUX_CLEARANCE_TEST_01
+
+Key result:
+
+body_size = 15
+
+aperture = 14
+clearance_ratio = 0.93
+transport = BLOCKED
+
+aperture = 16
+clearance_ratio = 1.07
+transport = PASS
+
+Interpretation:
+A geometric void is not automatically a usable passage.
+A passage becomes useful only when its free clearance is greater than or equal to the body size.
+
+Current threshold:
+clearance_ratio ≈ 1.0
+
+Limitations:
+- deterministic geometry test
+- not yet coupled to stochastic ray transport
+- not yet tested with curved, noisy, or irregular apertures
+
 # CURRENT CLAIM
 
 STRUX currently supports this limited claim:
