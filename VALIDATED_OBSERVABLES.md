@@ -224,3 +224,40 @@ STRUX does NOT yet support claims about:
 3. Sieve / porous barrier benchmark
 4. Real-world spatial graph test
 5. Automatic export of benchmark results
+
+---
+
+# 5. temporal_jitter
+
+STATUS:
+EXPERIMENTAL SYNTHETIC OBSERVABLE
+
+Definition:
+temporal_jitter = arrival_time_std / mean_arrival_time
+
+Operational meaning:
+temporal_jitter measures how dispersed arrival times are across an ensemble of propagated trajectories.
+
+Validated in:
+- STRUX_TEMPORAL_JITTER_TEST_01
+
+Key result:
+
+STRAIGHT:
+success_rate = 1.0000
+temporal_jitter = 0.0018
+direction_coherence = 0.9964
+
+ZIGZAG:
+success_rate = 0.7520
+temporal_jitter = 0.0313
+direction_coherence = 0.6423
+
+Interpretation:
+A geometry may remain partially traversable while degrading temporal synchronization and directional coherence.
+
+Limitations:
+- experimental benchmark only
+- not yet compared against diffusion/random-walk baselines
+- not yet tested for sampling convergence
+- not yet tested under geometric noise
