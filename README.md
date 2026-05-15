@@ -329,6 +329,35 @@ This benchmark measures directional degradation in straight, curved, and zigzag 
 
 This benchmark measures body-size versus aperture viability and constrained transport clearance.
 
+## Clearance Test
+---
+
+## Temporal Jitter Test
+
+Measures arrival-time dispersion in constrained geometries.
+
+Output:
+- success rate
+- mean arrival time
+- arrival-time standard deviation
+- temporal jitter
+- directional coherence
+
+Example result:
+
+STRAIGHT:
+success_rate = 1.0000
+temporal_jitter = 0.0018
+direction_coherence = 0.9964
+
+ZIGZAG:
+success_rate = 0.7520
+temporal_jitter = 0.0313
+direction_coherence = 0.6423
+
+Interpretation:
+a constrained geometry may remain traversable while degrading temporal synchronization and directional coherence.
+
 # Status
 
 Experimental research framework.
