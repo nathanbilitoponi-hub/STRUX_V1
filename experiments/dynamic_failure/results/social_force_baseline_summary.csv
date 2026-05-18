@@ -1,0 +1,5 @@
+repulsion_strength,success_mean,death_mean,jitter_mean
+0.05,0.0,1.0,
+0.1,0.0,1.0,
+0.2,0.0,1.0,
+0.35,0.0,1.0,
