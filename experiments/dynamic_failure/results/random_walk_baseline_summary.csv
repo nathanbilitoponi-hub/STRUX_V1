@@ -1,0 +1,5 @@
+noise,success_mean,death_mean,jitter_mean
+0.01,0.0,1.0,
+0.03,0.0,1.0,
+0.06,0.0,1.0,
+0.1,0.0,1.0,
