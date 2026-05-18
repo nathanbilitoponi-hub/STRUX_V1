@@ -1,373 +1,202 @@
-# STRUX_V1
+# Dynamic Failure / Congestion Experimental Subsystem
 
-Initial frozen public release of STRUX.
+## Status
 
-DOI:
-https://doi.org/10.5281/zenodo.20113740
+Experimental subsystem separated from core STRUX_V1.
 
-GitHub:
-https://github.com/nathanbilitoponi-hub/STRUX_V1
+This module explores transport degradation inside constrained geometric corridors using lightweight particle-based simulations.
 
----
+The subsystem is NOT considered part of the validated STRUX core.
 
-# What is STRUX?
-
-STRUX is an experimental geometric-transport framework for studying how constrained geometries affect propagation and structural organization.
-
-Instead of asking only:
-
-> "Does a path exist?"
-
-STRUX investigates:
-
-* how stable propagation remains,
-* how directional coherence degrades,
-* how bottlenecks affect transport,
-* how constrained geometries alter collective propagation behavior.
-
-The framework focuses on synthetic benchmark systems where geometry changes:
-
-* synchronization,
-* transport stability,
-* directional coherence,
-* propagation viability.
-
-Current STRUX_V1 is intentionally lightweight and frozen for reproducibility.
+Current purpose:
+- robustness exploration,
+- transport diagnostics,
+- congestion analysis,
+- interaction-driven degradation,
+- parameter sensitivity,
+- falsifiable experimental testing.
 
 ---
 
-# Core ideas
+# Current Experimental Components
 
-STRUX studies situations where two systems may have:
+Implemented mechanisms include:
 
-* the same connectivity,
-* the same reachable target,
-* similar path existence,
-
-but very different dynamic transport behavior.
-
-The framework currently focuses on:
-
-* constrained propagation,
-* geometric degradation,
-* transport coherence,
-* bottleneck sensitivity,
-* multiscale structural organization.
+- constrained S-shaped corridors,
+- goal-directed particles,
+- local collision interactions,
+- dead particle residue dynamics,
+- adaptive local deflection,
+- spatial choke analysis,
+- temporal jitter propagation,
+- multi-seed parameter sweeps,
+- baseline comparison tests.
 
 ---
 
-# Included modules
+# Main Observations
 
-## 1. Multiscale structural grouping
+## 1. Non-monotonic transport behavior
 
-File:
+The full interaction system exhibits a tradeoff between:
 
-core/multiscale/multiscale_life.py
+- throughput / success rate,
+- downstream temporal coherence.
 
-Main function:
+Observed pattern:
 
-run_strux_life(...)
+Low deflection:
+- lower temporal jitter,
+- higher collapse probability,
+- localized congestion.
 
-Features:
+High deflection:
+- higher success rate,
+- stronger downstream dispersion,
+- turbulence-like propagation.
 
-* radius clustering
-* compactness estimation
-* cut-ratio analysis
-* multiscale promotion
-* hierarchical compression
+Current interpretation:
+the system appears to exhibit a tradeoff between:
 
----
-
-## 2. Filament connection scoring
-
-File:
-
-core/connection_scoring/connection_scoring.py
-
-Main function:
-
-score_region_connections(...)
-
-Features:
-
-* tube support estimation
-* continuity analysis
-* coverage scoring
-* central density ratio
-* strong/weak filament classification
+- "stable but fragile"
+vs
+- "resilient but turbulent"
 
 ---
 
-## 3. Backbone extraction
+## 2. Spatial choke localization
 
-File:
+Failure events are not concentrated at a single curvature point.
 
-core/backbone/backbone_mst.py
+Instead:
+degradation zones emerge across transition regions and inclined downstream segments.
 
-Main function:
+This suggests that:
+- curvature may inject instability,
+- while collapse propagates downstream through interaction feedback.
 
-extract_backbone(...)
-
-Features:
-
-* sparse graph construction
-* MST topology reduction
-* minimal backbone extraction
+Current status:
+suggestive but not yet mechanistically identified.
 
 ---
 
-## 4. Persistence estimation
+## 3. Local jitter propagation
 
-File:
+Temporal jitter was measured across corridor regions:
 
-core/persistence/persistence.py
+- entry zone,
+- transition zone,
+- downstream zone.
 
-Main function:
+Observed behavior:
+- jitter is minimal at entry,
+- increases across transition regions,
+- becomes largest downstream.
 
-compute_edge_persistence_advanced(...)
-
-Features:
-
-* bootstrap edge sampling
-* DBSCAN persistence clustering
-* persistent core extraction
-
----
-
-## 5. Structural comparison
-
-File:
-
-core/compare/structure_compare.py
-
-Main function:
-
-run_brain_v2(...)
-
-Features:
-
-* node matching
-* edge confirmation
-* local agreement scoring
-* structure comparison
+This indicates:
+transport degradation propagates spatially through the corridor.
 
 ---
 
-## 6. Transport diagnosis
+# Critical Baseline Result
 
-File:
+## Ballistic No-Interaction Baseline
 
-core/transport/transport_diagnosis_v1.py
+A dedicated baseline was implemented removing:
 
-Main functions:
+- particle-particle collisions,
+- dead residue accumulation,
+- interaction feedback.
 
-* diagnose_transport(...)
-* count_gate_modes(...)
-* classify_transport(...)
+Geometry remained identical.
 
-Features:
+Result:
 
-* constrained transport analysis
-* directional coherence estimation
-* gate-mode counting
-* transport classification
-* propagation diagnostics
+High deflection in the ballistic baseline:
+- increases success,
+- decreases downstream jitter.
 
----
-
-# Current validated synthetic tests
-
-The current release includes multiple synthetic benchmarks for constrained transport analysis.
-
-## Aperture Threshold Test
-
-Measures transport collapse under progressive geometric narrowing.
-
-Output:
-
-* success rate
-* transport viability
-* threshold detection
-
----
-
-## Corridor Coherence Test
-
-Measures directional degradation in:
-
-* straight corridors
-* curved corridors
-* zigzag geometries
-
-Output:
-
-* directional coherence
-* propagation degradation
-* stability comparison
-
----
-
-## Diamond Component Test
-
-Studies local transport separation inside bifurcating geometries.
-
-Output:
-
-* local transport modes
-* branching behavior
-* bifurcation structure
-
----
-
-## Clearance Test
-
-Measures body-size vs aperture viability.
-
-Output:
-
-* pass/fail thresholds
-* clearance ratios
-* geometric transport constraints
-
----
-
-# Install
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-# Run benchmark
-
-Example benchmark:
-
-```bash
-python benchmarks/test_strux_v1.py
-```
-
-Transport benchmarks:
-
-```bash
-python -m benchmarks.transport_diagnosis_test_05
-
-python -m benchmarks.corridor_coherence_test_01
-
-python -m benchmarks.clearance_test_01
-
-python -m benchmarks.diamond_component_test_01
-
-python -m benchmarks.sieve_test_01
-```
-
----
-
-# Repository structure
-
-```text
-core/
-    backbone/
-    compare/
-    connection_scoring/
-    multiscale/
-    persistence/
-    transport/
-
-benchmarks/
-exports/
-examples/
-docs/
-datasets/
-```
-
----
-
-# Current limitations
-
-STRUX_V1 does NOT currently claim:
-
-* new physics
-* cosmology
-* universal transport laws
-* superiority over shortest-path algorithms
-* full topological inference
-
-Current focus is limited to:
-
-* constrained geometric propagation
-* transport degradation
-* coherence loss
-* synthetic benchmark diagnostics
-
----
-# Current validated synthetic tests
-
-## Example outputs
-
-### Aperture Threshold Test
-
-![Aperture Test](exports/STRUX_APERTURE_TEST_01/aperture_selected.png)
-
-This benchmark measures transport collapse under progressive geometric narrowing.
-
----
-
-### Corridor Coherence Test
-
-![Corridor Coherence](exports/STRUX_CORRIDOR_COHERENCE_TEST_01/corridor_coherence_trajectories.png)
-
-This benchmark measures directional degradation in straight, curved, and zigzag corridors.
-
----
-
-### Clearance Test
-
-![Clearance Test](exports/STRUX_CLEARANCE_TEST_01/clearance_examples.png)
-
-This benchmark measures body-size versus aperture viability and constrained transport clearance.
-
-## Clearance Test
----
-
-## Temporal Jitter Test
-
-Measures arrival-time dispersion in constrained geometries.
-
-Output:
-- success rate
-- mean arrival time
-- arrival-time standard deviation
-- temporal jitter
-- directional coherence
-
-Example result:
-
-STRAIGHT:
-success_rate = 1.0000
-temporal_jitter = 0.0018
-direction_coherence = 0.9964
-
-ZIGZAG:
-success_rate = 0.7520
-temporal_jitter = 0.0313
-direction_coherence = 0.6423
+This is the opposite of the full interaction system.
 
 Interpretation:
-a constrained geometry may remain traversable while degrading temporal synchronization and directional coherence.
+geometry alone does NOT generate downstream turbulence-like dispersion.
 
-# Status
+The observed tradeoff appears to depend on:
+- local interactions,
+- collision feedback,
+- passive obstacle accumulation,
+- adaptive deflection coupling.
 
-Experimental research framework.
-
-This repository is a frozen V1 release and does not represent the final STRUX architecture.
+This is currently the strongest result of the subsystem.
 
 ---
 
-# Author
+# Current Limitations
 
-Nathan Bili Toponi
+The subsystem remains exploratory.
 
-2026
+The following have NOT yet been established:
+
+- mechanism identification,
+- scaling laws,
+- universality,
+- robustness across arbitrary geometries,
+- correspondence with physical turbulence,
+- correspondence with hydrodynamic instability.
+
+Current results apply ONLY to:
+- the tested S-shaped corridor family,
+- the tested parameter ranges.
+
+---
+
+# Existing Baselines
+
+Implemented:
+- random walk baseline,
+- simple social-force baseline,
+- ballistic no-interaction baseline.
+
+Planned:
+- Vicsek alignment baseline,
+- frictional social-force baseline,
+- density scaling analysis,
+- geometry perturbation tests.
+
+---
+
+# Repository Policy
+
+This subsystem is intentionally isolated from the core STRUX framework.
+
+Experimental modules:
+- must remain reproducible,
+- must remain falsifiable,
+- must avoid speculative claims,
+- must not be presented as validated physical theory.
+
+The subsystem is intended as:
+- an experimental transport diagnostics sandbox,
+- a constrained geometry degradation study,
+- a lightweight interaction-flow research prototype.
+
+---
+
+# Current Interpretation
+
+Current evidence suggests that:
+
+- constrained geometry organizes flow,
+- interaction dynamics generate degradation,
+- local avoidance can improve throughput,
+- interaction feedback can amplify downstream temporal dispersion.
+
+The exact mechanism remains unknown.
+
+Possible candidate interpretations include:
+- hydrodynamic dispersion analogies,
+- delayed downstream instability,
+- interaction-driven transport disorder,
+- active-matter-style congestion transitions.
+
+These interpretations remain hypothetical until validated through additional baselines and scaling studies.
