@@ -1,0 +1,7 @@
+test,metric,value
+gradient_ratio,real_random,0.5798
+node_distance_ratio,real_random,0.9774
+void_distance_ratio,real_random,1.0099
+cost_path_dice,STRUX,0.0797
+cost_path_dice,Euclidean,0.0178
+gain_vs_euclidean,ratio,4.48
