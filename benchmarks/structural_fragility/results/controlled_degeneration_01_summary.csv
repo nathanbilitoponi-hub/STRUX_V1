@@ -1,0 +1,4 @@
+method,precision,recall,final_lcc
+STRUX,1.0,1.0,0.5142857142857142
+Betweenness,1.0,1.0,0.5142857142857142
+Random,,,0.5142857142857142
