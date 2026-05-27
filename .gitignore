@@ -29,4 +29,8 @@ exports/STRUX_SIEVE_TEST_01/
 exports/STRUX_TEMPORAL_JITTER_TEST_01/
 exports/STRUX_TRANSPORT_GIF/
 exports/STRUX_TRANSPORT_GIF_V2/
+
+# Mission 09 generated individual plots
+benchmarks/structural_fragility/figures/local_signature_09_*.png
+!benchmarks/structural_fragility/figures/local_signature_09_panel.png
  
