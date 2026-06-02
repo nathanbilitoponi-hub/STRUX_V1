@@ -1,0 +1,11 @@
+name,family,nodes,edges,strux_peak,strux_abs_peak,random_median_abs_peak,random_mean_abs_peak,gain_median,gain_mean,random_valid
+cosmic_web_toy,natural_like,849,4240,0.5,0.5,3.5,4.77,7.0,9.54,100
+vascular_tree_toy,natural_like,255,284,-1.5,1.5,5.5,5.06,3.6666666666666665,3.373333333333333,100
+leaf_venation_toy,natural_like,1050,4403,2.5,2.5,6.5,6.58,2.6,2.632,100
+branching_growth_toy,natural_like,1000,999,-0.5,0.5,7.5,7.829787234042553,15.0,15.659574468085106,94
+random_geometric,natural_like,1000,6224,-0.5,0.5,6.0,5.76,12.0,11.52,100
+erdos_renyi,artificial_null,1000,4015,-1.5,1.5,0.5,1.15,0.3333333333333333,0.7666666666666666,100
+barabasi_albert,artificial_null,1000,3984,-0.5,0.5,0.5,0.95,1.0,1.9,100
+perfect_grid,artificial_regular,1024,1984,-0.5,0.5,11.5,7.26,23.0,14.52,100
+ring_lattice,artificial_regular,1000,4000,-3.5,3.5,7.5,6.74,2.142857142857143,1.9257142857142857,100
+clustered_artificial,artificial_modular,880,5747,-0.5,0.5,3.5,3.91,7.0,7.82,100
