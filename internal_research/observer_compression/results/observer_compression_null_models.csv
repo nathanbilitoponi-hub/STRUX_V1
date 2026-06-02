@@ -1,0 +1,6 @@
+model,nodes,edges,strux_peak,strux_abs_peak,random_median_abs_peak,random_mean_abs_peak,gain_median,gain_mean,random_valid
+erdos_renyi,1000,4015,-1.5,1.5,0.5,1.15,0.3333333333333333,0.7666666666666666,100
+barabasi_albert,1000,3984,-0.5,0.5,0.5,0.95,1.0,1.9,100
+grid_32x32,1024,1984,-0.5,0.5,11.5,7.26,23.0,14.52,100
+random_geometric,1000,6224,-0.5,0.5,6.0,5.76,12.0,11.52,100
+balanced_tree,1093,1092,-0.5,0.5,5.5,5.44,11.0,10.88,100
