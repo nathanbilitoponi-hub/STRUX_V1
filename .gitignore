@@ -34,3 +34,5 @@ exports/STRUX_TRANSPORT_GIF_V2/
 benchmarks/structural_fragility/figures/local_signature_09_*.png
 !benchmarks/structural_fragility/figures/local_signature_09_panel.png
  
+# Local SDSS datasets
+datasets/sdss/*.csv
