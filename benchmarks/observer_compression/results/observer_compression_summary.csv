@@ -1,0 +1,2 @@
+sample_size,graph_nodes,graph_edges,strux_observer,strux_peak,strux_abs_peak,strux_peak_score,strux_reach,random_observers,random_mean_abs_peak,random_median_abs_peak,compression_gain_mean,compression_gain_median
+3000,3000,17405,2973,-0.5,0.5,0.007655972414633932,3000,200,4.925,5.5,9.85,11.0
