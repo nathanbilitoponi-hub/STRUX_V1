@@ -107,7 +107,7 @@ def main():
     parser.add_argument("--k", type=int, default=10)
     parser.add_argument("--random-observers", type=int, default=200)
     parser.add_argument("--seed", type=int, default=42)
-    parser.add_argument("--outdir", default="benchmarks/observer_compression")
+    parser.add_argument("--outdir", default="internal_research/observer_compression")
     args = parser.parse_args()
 
     outdir = Path(args.outdir)
