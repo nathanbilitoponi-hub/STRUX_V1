@@ -1,0 +1,22 @@
+{
+  "test": "SDSS_GRAPH_FLOW_DAMAGE_MIN_PROOF",
+  "seeds_tested": 10,
+  "events_found": 10,
+  "path_optimizer_like": 10,
+  "mandatory_like": 0,
+  "good_negative_controls": 10,
+  "event_rate": 1.0,
+  "good_negative_rate": 1.0,
+  "delta_min": 3,
+  "delta_max": 5,
+  "verdict": "PASS_MULTISEED_REPLICATION_STRONG",
+  "safe_claim": "Existence proof only. Frequency and cosmological relevance untested.",
+  "forbidden_claims": [
+    "cosmological validation",
+    "void-finder benchmark",
+    "VIDE/ZOBOV comparison",
+    "void statistics",
+    "cosmic web topology",
+    "full-graph event frequency"
+  ]
+}
