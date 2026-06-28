@@ -236,3 +236,10 @@ Priority order:
 
 NOT the reverse.
 
+
+# LATEST FROZEN MILESTONE
+
+The `experiments/critical_transition/` archive freezes the latest STRUX_V1 controlled synthetic result. In the tested configuration, local geometric organization is measured by the pointwise differential Z-score of `STRUCTURED_SHOCK` against `VECTOR_SHUFFLE`, and the signature survives only within an approximate critical window of `Shock <= 0.4`.
+
+This milestone replaces the interpretation of an absolute radial peak with a differential null-control analysis. It does not modify the STRUX_V1 core, establish a universal threshold, or claim validation on real-world data. It is STRUX_V1, not STRUX_V2.
+

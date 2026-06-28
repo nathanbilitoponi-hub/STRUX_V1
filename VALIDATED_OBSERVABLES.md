@@ -261,3 +261,40 @@ Limitations:
 - not yet compared against diffusion/random-walk baselines
 - not yet tested for sampling convergence
 - not yet tested under geometric noise
+
+---
+
+# 6. Differential Z-score extinction
+
+STATUS:
+VALIDATED AS A CONTROLLED SYNTHETIC OBSERVABLE
+
+Definition:
+
+At each matched shock level and radial point,
+
+```text
+Z_diff = (mean(STRUCTURED_SHOCK) - mean(VECTOR_SHUFFLE))
+         / std(VECTOR_SHUFFLE)
+```
+
+where the denominator is the sample standard deviation across Vector Shuffle realizations.
+
+Operational meaning:
+
+The observable measures whether local geometric organization remains distinguishable from a distribution-preserving shuffle control as disorder increases. Its extinction is the loss of that differential signature, not the movement of an absolute radial maximum.
+
+Current validation scope:
+
+- controlled synthetic structured-shock campaign;
+- pointwise comparison with Vector Shuffle;
+- Gaussian Noise used as a flat null control;
+- signature observed only within an approximate window of `Shock <= 0.4` for the tested configuration.
+
+Current limitations:
+
+- synthetic and configuration-specific;
+- depends on adequate Vector Shuffle replication and nonzero control variance;
+- threshold stability across seeds, resolutions, and parameters is not established;
+- requires a differential shuffle baseline;
+- not validated on real-world data and not evidence of a universal physical transition.

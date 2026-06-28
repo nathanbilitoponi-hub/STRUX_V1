@@ -113,3 +113,15 @@ Current validated scope is limited to:
 
 experimental geometric transport diagnostics
 in constrained synthetic benchmark systems.
+
+---
+
+# 8. Local-vs-distributional separation
+
+The frozen critical-transition experiment separates local organization from distributional properties by comparing `STRUCTURED_SHOCK` pointwise with a `VECTOR_SHUFFLE` baseline.
+
+Open question:
+
+Can future STRUX versions isolate a purely local invariant without requiring a differential shuffle baseline?
+
+This remains explicitly unresolved. The current STRUX_V1 evidence does not establish such an invariant.

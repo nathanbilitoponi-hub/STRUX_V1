@@ -252,3 +252,48 @@ without explicitly explaining:
 
 \- and how the new formulation avoids the old failure.
 
+
+\---
+
+
+\# RADIAL GEOMETRIC-SIGNATURE FAILURES
+
+
+\## Best_Bin as a stable geometric wall
+
+
+STATUS:
+
+FAILED
+
+
+Problem:
+
+`Best_Bin` selects the location of an absolute radial peak. The null-control campaign showed that peak selection is not robust enough to separate local geometric organization from distributional and amplitude effects.
+
+
+Conclusion:
+
+`Best_Bin` is not considered a stable geometric observable or evidence of a geometric wall. The relevant controlled observable is instead the extinction of the pointwise differential Z-score against Vector Shuffle.
+
+
+\---
+
+
+\## Raw Mean_Vort analyzed alone
+
+
+STATUS:
+
+INSUFFICIENT AS A STANDALONE OBSERVABLE
+
+
+Problem:
+
+An absolute `Mean_Vort` value does not identify whether the response comes from local organization or from distributional properties preserved by a shuffle.
+
+
+Conclusion:
+
+`Mean_Vort` may remain an input measurement, but its raw value alone does not support the geometric interpretation. A matched null-control comparison is required in the frozen synthetic analysis.
+
