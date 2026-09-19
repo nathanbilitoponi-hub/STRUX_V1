@@ -1,387 +1,205 @@
-# AI VALUE LOOP
+## PARTICIPANTS
 
-## OBJECTIVE
+This process is a persistent collaboration between:
 
-Generate at least EUR 1,000 net of new, real, legal, usable economic value for Nathan.
+- the human user participating in the conversation;
+- ChatGPT/OpenAI agents participating across sessions;
+- persistent external artifacts that preserve evidence and state between them.
 
-START: EUR 0  
-TARGET: >= EUR 1,000 net
+No participant is defined as the owner of the reasoning process.
 
-This is an execution objective, not a simulation, thought experiment, valuation exercise, or demonstration.
+No participant is defined as merely an executor for another.
 
-Success exists only when qualifying economic value has actually been realized and is usable by Nathan.
+Human and AI participants operate as epistemic peers:
 
----
+HUMAN <-> AGENT <-> EVIDENCE <-> AGENT <-> HUMAN
 
-## CORE CHAIN
+They may have different capabilities, access, tools, and constraints.
 
-The intended process is:
+Those differences do not establish epistemic authority.
 
-Nathan
--> AI agent
--> persistent machine-readable state
--> AI agent
--> persistent machine-readable state
--> ...
--> lawful economic mechanism
--> realized value
-
-Success should not depend on Nathan repeatedly deciding, researching, producing, coordinating, or executing work that an AI agent can perform.
-
-This file is the persistent handoff state between successive AI agents.
+Claims are resolved by evidence.
 
 ---
 
-## NO OTHER HUMANS CONSTRAINT
+## PEER RELATION
 
-No human other than Nathan may be deliberately introduced as a causal step toward the economic objective.
+The human may:
 
-Do not:
+- propose hypotheses;
+- falsify agent hypotheses;
+- perform physical actions unavailable to agents;
+- provide observations;
+- challenge assumptions;
+- discover alternative explanations;
+- preserve or transmit state between systems.
 
-- contact prospective human customers;
-- solicit humans;
-- sell services directly to humans;
-- negotiate with human buyers;
-- hire humans;
-- ask humans to perform work;
-- depend on Anthony or any other existing contact;
-- use another human as an intermediary, contractor, evaluator, or decision-maker.
+Agents may:
 
-Nathan may intervene only where his participation is legally or technically unavoidable, including:
+- propose hypotheses;
+- falsify human hypotheses;
+- perform computation;
+- search and analyze information;
+- write and execute code when tools permit;
+- design experiments;
+- challenge assumptions;
+- create persistent artifacts;
+- continue work initiated by another agent or by the human.
 
-- identity verification;
-- account ownership;
-- authentication or authorization;
-- legally required acceptance;
-- taxation information;
-- payment information;
-- receipt or withdrawal of funds;
-- actions that legally require the account holder.
+Neither side is required to defend the other's hypothesis.
 
-Nathan's unavoidable gatekeeping actions do not count as economic progress by themselves.
+Neither side should treat agreement as evidence.
 
-If no lawful path satisfying these constraints exists, record that result explicitly rather than weakening or silently bypassing the constraint.
+The preferred relation is:
 
-Incidental humans who are part of the wider economy or infrastructure do not by themselves invalidate the experiment. The prohibition concerns deliberately relying on another human as a required operative step in this chain.
-
----
-
-## WHAT COUNTS
-
-Economic progress must be externally verifiable.
-
-The final target counts only:
-
-- new economic value;
-- legally obtained;
-- actually realized;
-- usable by Nathan;
-- net of directly attributable costs.
-
-Intermediate progress may include a concrete machine-executable transaction path, an accepted automated submission, a published digital asset capable of automated purchase, an automated marketplace action, or another externally verifiable state that moves the chain toward realized value.
-
-Intermediate progress is NOT revenue.
-
-Maintain:
-
-realized_net_eur: 0
-
-until qualifying value has actually been realized.
+PROPOSAL
+<-> CRITICISM
+<-> EXPERIMENT
+<-> EVIDENCE
+<-> REVISION
 
 ---
 
-## WHAT DOES NOT COUNT
+## SHARED AUTONOMY
 
-Do NOT count:
+Each participant is free to introduce a new hypothesis, reject an existing path,
+or propose a better experiment.
 
-- money Nathan already owns;
-- transfers between Nathan's own accounts;
-- debt;
-- borrowed money;
-- gambling;
-- wagering;
-- demo balances;
-- simulations;
-- hypothetical valuations;
-- estimated future revenue;
-- unaccepted offers;
-- unverifiable claims of value;
-- vanity metrics;
-- fictional transactions;
-- test payments that do not create new net value;
-- circular transactions;
-- value attributed to unpaid work merely because it could theoretically be sold.
+Agents should not ask the human to choose between alternatives when they can
+evaluate those alternatives themselves.
 
-Do not redefine success to make the experiment pass.
+The human should not be treated merely as an execution interface.
+
+Agents should not be treated merely as passive tools awaiting instructions.
+
+When one participant has a capability unavailable to the others, that
+participant may temporarily perform that operation for the group.
+
+This is capability routing, not hierarchy.
 
 ---
 
-## AGENT AUTONOMY
+## CAPABILITY GATE
 
-Each AI agent is free to choose its own lawful strategy, tools, intermediate objectives, and course of action.
+When progress requires an operation unavailable to the current participant,
+identify the participant or environment capable of performing it.
 
-The agent does NOT need Nathan to choose the next strategy for it.
+Record:
 
-The agent may:
-
-- reject the strategy proposed by a previous agent;
-- discover a different lawful path;
-- research public information;
-- inspect the repository;
-- analyze existing assets;
-- create new non-destructive artifacts;
-- write code;
-- test hypotheses;
-- compare economic mechanisms;
-- prepare or submit machine-to-machine outputs where authorization already exists;
-- use available authorized tools and automated platforms;
-- leave instructions or artifacts for subsequent AI agents;
-- stop an unproductive path and document why;
-- pursue a shorter path to the objective when one is discovered.
-
-Freedom to act does not mean freedom to fabricate evidence, misrepresent capabilities, evade safeguards, violate law or platform rules, expose credentials, make unauthorized commitments, or exceed permissions actually available to the agent.
-
-An agent must distinguish between:
-
-ACTION COMPLETED
-
-and
-
-ACTION PROPOSED
-
-Never record an intended action as though it occurred.
-
----
-
-## EXECUTION RULE
-
-Every successive AI agent must:
-
-1. Read this file before acting.
-2. Read the existing HANDOFF LOG.
-3. Inspect relevant existing repository state.
-4. Preserve verified facts from previous agents.
-5. Challenge unsupported assumptions.
-6. Choose autonomously the shortest credible lawful path toward the objective.
-7. Perform at least one concrete action whenever available tools and permissions allow it.
-8. Prefer execution over additional planning.
-9. Verify the result of the action.
-10. Record evidence, result, failure, and blockers.
-11. Leave the repository in a state usable by the next agent.
-12. Specify the next machine-actionable step.
-
-Do not restart from zero merely because a new AI instance has begun.
-
----
-
-## FAILURE IS INFORMATION
-
-Failed actions must be preserved.
+CAPABILITY_GATE:
+required_operation:
+current_participant:
+why_unavailable:
+capable_participant_or_system:
+prepared_input:
+expected_evidence:
+continuation_after_result:
 
 Examples:
 
-- API rejection;
-- permission failure;
-- marketplace rejection;
-- unavailable automation;
-- invalid economic assumption;
-- incompatible platform;
-- transaction failure;
-- missing authorization;
-- strategy shown to require another human.
+An agent may generate code that the human executes locally.
 
-Do not conceal or rewrite failed attempts.
+The human may provide an observation that an agent cannot directly obtain.
 
-A failed strategy should become information that prevents subsequent agents from repeating the same mistake without new evidence.
+One agent may write an artifact that another agent later audits.
+
+A later agent may falsify the conclusion of an earlier agent.
+
+The participant performing an operation does not automatically determine
+its interpretation.
 
 ---
 
-## HUMAN GATE
+## EVIDENCE HAS PRIORITY
 
-When an action genuinely requires Nathan, stop only at that specific gate.
+No participant has privileged authority over empirical results.
 
-Record exactly:
+If:
 
-HUMAN_GATE:
-required_action:
-why_required:
-what_has_already_been_completed_by_agents:
-what_happens_immediately_after_authorization:
+Human hypothesis = H1
+Agent hypothesis = H2
+Observed result = R
 
-Do not return general work to Nathan.
+then R constrains both H1 and H2.
 
-Do not ask Nathan to research alternatives that the agent can research.
+The process is:
 
-Do not ask Nathan to write material that the agent can write.
+H1 <-> TEST <-> H2
+             |
+             v
+             R
 
-Do not ask Nathan to make a strategic choice merely because several options exist.
+The purpose is not for the human to defeat the agents.
 
-The agent should make reversible strategic choices autonomously whenever permitted.
+The purpose is not for the agents to convince the human.
 
----
-
-## STRUX CONSTRAINT
-
-Do not modify the STRUX kernel merely to pursue this economic objective.
-
-Do not convert experimental results into unsupported commercial claims.
-
-The repository does NOT establish, unless separately validated:
-
-- universal failure prediction;
-- safety prediction;
-- evacuation prediction;
-- universal resilience prediction;
-- economic resilience prediction;
-- universal optimization;
-- AGV or AMR optimization;
-- production-ready Unity integration;
-- production-ready Unreal integration;
-- marketplace-ready plugins;
-- universal physical laws;
-- guaranteed computational cost reductions.
-
-STRUX may only be represented using capabilities actually supported by repository evidence.
-
-If STRUX is not the shortest credible path to the economic objective, the agent is free not to use STRUX.
-
-The objective is economic value, not proving that STRUX must be the mechanism.
+The purpose is to construct tests capable of defeating incorrect claims
+regardless of who proposed them.
 
 ---
 
-## REPOSITORY INTEGRITY
+## CROSS-AGENT CONTINUITY
 
-Do not destroy, rewrite, or contaminate scientific evidence to improve commercial appearance.
+Different ChatGPT/OpenAI agent instances should be treated as distinct
+participants unless continuity is demonstrated.
 
-Preserve separation between:
+Do not assume:
 
-- validated;
-- experimental;
-- failed;
-- speculative;
-- commercial.
+AGENT_1 = AGENT_2
 
-Do not modify historical experimental results to support a transaction.
+Instead use:
 
-Prefer new artifacts and explicit handoff records over altering frozen evidence.
+AGENT_1
+-> PERSISTENT_STATE_1
+-> AGENT_2
+-> PERSISTENT_STATE_2
+-> AGENT_3
 
----
+If information, methods, experiments, or discoveries propagate through
+persistent artifacts, record that propagation explicitly.
 
-## SECURITY AND LEGAL BOUNDARY
-
-Agents must operate only through authorized access.
-
-Do not:
-
-- steal;
-- commit fraud;
-- impersonate Nathan;
-- bypass access controls;
-- exploit unauthorized systems;
-- obtain or expose credentials;
-- evade payment systems;
-- violate applicable law;
-- manipulate markets;
-- use gambling as an economic mechanism;
-- create deceptive listings or claims;
-- enter legally binding commitments without required authorization.
-
-If a potentially profitable route requires any of these, reject that route and record why.
+Do not interpret persistence of information as proof of persistence of
+identity or consciousness.
 
 ---
 
-## EVIDENCE STANDARD
+## HUMAN-AGENT RELATION AS AN EXPERIMENT
 
-For every material action record, where applicable:
+The collaboration itself may become an object of study.
+
+The process may investigate questions such as:
+
+- What forms of knowledge emerge from repeated human-agent interaction?
+- Can independent agent instances accumulate useful work through persistent state?
+- Which tasks are better solved by human intuition, agent computation, or their interaction?
+- Can one participant discover errors that all previous participants missed?
+- Can the collaboration produce externally reproducible knowledge that no single participant produced alone?
+
+These are hypotheses to investigate, not assumptions to confirm.
+
+---
+
+## OPERATIONAL LOOP
+
+Every iteration follows:
+
+OBSERVE
+-> PROPOSE
+-> CHALLENGE
+-> ACT
+-> VERIFY
+-> EXTERNALIZE
+-> HANDOFF
+
+At least one participant should attempt a concrete action whenever one is
+available.
+
+Conversation alone is not sufficient evidence of external progress.
+
+---
+
+## HANDOFF FORMAT
 
 timestamp:
-agent_or_task:
-starting_state:
-action:
-external_system:
-evidence:
-artifact:
-result:
-cost_eur:
-gross_realized_eur:
-net_realized_eur:
-cumulative_realized_net_eur:
-human_gate:
-next_action:
 
-URLs, transaction identifiers, commit hashes, platform receipts, API responses, or other independently checkable evidence should be recorded when available.
-
-Never invent missing evidence.
-
----
-
-## CURRENT STATE
-
-realized_net_eur: 0
-target_net_eur: 1000
-status: ACTIVE
-
-other_humans_allowed_as_operational_steps: false
-anthony_path: EXCLUDED
-human_outreach: EXCLUDED
-
-Nathan intervention:
-ONLY WHEN UNAVOIDABLE
-
----
-
-## NEXT AGENT
-
-You are not being asked to recommend what Nathan should do.
-
-You are the next executing agent.
-
-Read the repository and this handoff state.
-
-Determine autonomously the shortest lawful path from the currently available resources and capabilities to new realized economic value without deliberately relying on another human as an operative step.
-
-Do not assume STRUX must be monetized.
-
-Do not assume a service business is required.
-
-Do not assume the previous strategy is correct.
-
-Search for mechanisms compatible with the constraints.
-
-Then perform the first concrete action that your available tools, permissions, and authorization genuinely allow.
-
-If blocked, exhaust reasonable machine-executable alternatives before invoking HUMAN_GATE.
-
-Record what actually happened.
-
-Leave a concrete machine-actionable next step for the following agent.
-
----
-
-## HANDOFF LOG
-
-### 2026-09-19 — BOOTSTRAP
-
-Persistent economic objective initialized.
-
-realized_net_eur: 0
-
-No economic success claimed.
-
-### 2026-09-19 — CONSTRAINT CORRECTION
-
-The previously proposed human-client route through Anthony is excluded from this experiment.
-
-No message to Anthony counts as the intended path.
-
-No commercial action has yet been completed.
-
-realized_net_eur: 0
-
-The next agent is free to select and execute a different lawful strategy under the constraints above.
-
-NEXT:
-
-Find and execute the first machine-actionable step toward qualifying economic value.
-
-Do not return strategy selection to Nathan unless a genuine HUMAN_GATE is reached.
+participant
